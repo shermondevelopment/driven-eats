@@ -1,1 +1,22 @@
 @charset "UTF-8";
+@import url("reset.css");
+
+:root {
+  --header-color: #CF2B2B;
+}
+
+.header {
+  width: 100%;
+  height: 92px;
+  padding: 20px;
+  background: var(--header-color);
+}
+
+.header__title {
+  font-size: 44px;
+  font-family: 'Righteous', sans-serif;
+}
+
+.header__description {
+  font-size: 18px;
+}
