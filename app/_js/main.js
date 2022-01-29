@@ -125,6 +125,8 @@ const infoClient = () => {
     - Bebida: ${cart.drinks.title}
     - Sobremesa: ${cart.dessert.title}
     Total: R$ ${(cart.dessert.price + cart.drinks.price + cart.dishes.price).toFixed(2)}
+    Nome: ${client.name}
+    Endereço: ${client.address}
   `
   window.open(`https://wa.me/5588981225040?text=${encodeURIComponent(message)}`, '_blank')
   exitModal()
