@@ -136,6 +136,7 @@
   height: 92px;
   background: #fff;
   position: fixed;
+  left: 0;
   bottom: 0;
   display: flex;
   justify-content: center;
