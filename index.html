@@ -3,12 +3,14 @@
 
 <head>
   <title>DrivenEats</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="app/_css/main.css" />
-  <script type="module" src="app/_css/main.js"></script>
+  <script type="text/javascript" defer src="app/_js/main.js"></script>
 </head>
 
 <body>
@@ -22,18 +24,21 @@
         <h2 class="first__dish-title">Primeiro, seu prato</h2>
         <div class="first__dish-options">
           <ul class="options__list">
-            <li>
+            <li class="enable" data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2019/08/din1135-sustenta5.jpg"
                   alt="prato de comida" width="144px" height="87px" />
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 10,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 10,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
@@ -41,11 +46,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 88,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 88,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qMXomv8ROtIpIBQJTK81aUBsjjZzxx5lLEpckz9bgcMADBVoC-0CXGw5R0aDXN32gOw&usqp=CAU"
@@ -53,11 +61,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 16,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
@@ -65,11 +76,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 23,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qMXomv8ROtIpIBQJTK81aUBsjjZzxx5lLEpckz9bgcMADBVoC-0CXGw5R0aDXN32gOw&usqp=CAU"
@@ -77,11 +91,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 16,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
@@ -89,11 +106,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 16,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qMXomv8ROtIpIBQJTK81aUBsjjZzxx5lLEpckz9bgcMADBVoC-0CXGw5R0aDXN32gOw&usqp=CAU"
@@ -101,11 +121,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 23,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dishes onclick="addChecked(this, '[data-dishes]')">
               <figure class="options__figure">
                 <img
                   src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
@@ -113,79 +136,10 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="options__figure">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qMXomv8ROtIpIBQJTK81aUBsjjZzxx5lLEpckz9bgcMADBVoC-0CXGw5R0aDXN32gOw&usqp=CAU"
-                  alt="prato de comida" width="144px" height="87px" />
-                <figcaption class="options__figure-describe">
-                  <h2 class="options__first-title">Prato de comida</h2>
-                  <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="options__figure">
-                <img
-                  src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
-                  alt="prato de comida" width="144px" height="87px" />
-                <figcaption class="options__figure-describe">
-                  <h2 class="options__first-title">Prato de comida</h2>
-                  <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="options__figure">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qMXomv8ROtIpIBQJTK81aUBsjjZzxx5lLEpckz9bgcMADBVoC-0CXGw5R0aDXN32gOw&usqp=CAU"
-                  alt="prato de comida" width="144px" height="87px" />
-                <figcaption class="options__figure-describe">
-                  <h2 class="options__first-title">Prato de comida</h2>
-                  <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="options__figure">
-                <img
-                  src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
-                  alt="prato de comida" width="144px" height="87px" />
-                <figcaption class="options__figure-describe">
-                  <h2 class="options__first-title">Prato de comida</h2>
-                  <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="options__figure">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qMXomv8ROtIpIBQJTK81aUBsjjZzxx5lLEpckz9bgcMADBVoC-0CXGw5R0aDXN32gOw&usqp=CAU"
-                  alt="prato de comida" width="144px" height="87px" />
-                <figcaption class="options__figure-describe">
-                  <h2 class="options__first-title">Prato de comida</h2>
-                  <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="options__figure">
-                <img
-                  src="https://st.depositphotos.com/1003814/4626/i/600/depositphotos_46267763-stock-photo-fried-chicken-fillets.jpg"
-                  alt="prato de comida" width="144px" height="87px" />
-                <figcaption class="options__figure-describe">
-                  <h2 class="options__first-title">Prato de comida</h2>
-                  <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 23,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
@@ -198,7 +152,7 @@
         </h2>
         <div class="second__dish-options">
           <ul class="options__list">
-            <li>
+            <li data-identifier="food-option" data-drinks onclick="addChecked(this, '[data-drinks]')">
               <figure class="options__figure">
                 <img
                   src="data:image/jpeg;base64,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"
@@ -206,11 +160,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Bebida Brahma</h2>
                   <h3 class="options__second-title">Uma bebida gelada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 10,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-drinks onclick="addChecked(this, '[data-drinks]')">
               <figure class="options__figure">
                 <img
                   src="https://www.tiaozinho.com/produto-imagem/500/bebida-alcool-mista-leonoff-maca-verde-900ml-a0fdc2e22c64e11a704f0c34dacb7a5e.jpg"
@@ -218,11 +175,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Bebida Brahma</h2>
                   <h3 class="options__second-title">Uma bebida gelada</h3>
-                  <span class="options__third-title">R$ 45,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 45,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-drinks onclick="addChecked(this, '[data-drinks]')">
               <figure class="options__figure">
                 <img
                   src="data:image/jpeg;base64,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"
@@ -230,11 +190,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Bebida Brahma</h2>
                   <h3 class="options__second-title">Uma bebida gelada</h3>
-                  <span class="options__third-title">R$ 121,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 121,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-drinks onclick="addChecked(this, '[data-drinks]')">
               <figure class="options__figure">
                 <img
                   src="https://www.tiaozinho.com/produto-imagem/500/bebida-alcool-mista-leonoff-maca-verde-900ml-a0fdc2e22c64e11a704f0c34dacb7a5e.jpg"
@@ -242,11 +205,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Bebida Brahma</h2>
                   <h3 class="options__second-title">Uma bebida gelada</h3>
-                  <span class="options__third-title">R$ 12,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 12,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-drinks onclick="addChecked(this, '[data-drinks]')">
               <figure class="options__figure">
                 <img
                   src="data:image/jpeg;base64,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"
@@ -254,11 +220,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Bebida Brahma</h2>
                   <h3 class="options__second-title">Uma bebida gelada</h3>
-                  <span class="options__third-title">R$ 132,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 132,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-drinks onclick="addChecked(this, '[data-drinks]')">
               <figure class="options__figure">
                 <img
                   src="https://www.tiaozinho.com/produto-imagem/500/bebida-alcool-mista-leonoff-maca-verde-900ml-a0fdc2e22c64e11a704f0c34dacb7a5e.jpg"
@@ -266,7 +235,10 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Bebida Brahma</h2>
                   <h3 class="options__second-title">Uma bebida gelada</h3>
-                  <span class="options__third-title">R$ 211,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 211,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
@@ -277,7 +249,7 @@
         <h2 class="third__dish-title">Por fim, sua sobremesa</h2>
         <div class="third__dish-options">
           <ul class="options__list">
-            <li>
+            <li data-identifier="food-option" data-dessert onclick="addChecked(this, '[data-dessert]')">
               <figure class="options__figure">
                 <img
                   src="data:image/jpeg;base64,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"
@@ -285,11 +257,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de sobremesa</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 102,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 102,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dessert onclick="addChecked(this, '[data-dessert]')">
               <figure class="options__figure">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR3PZNL_-2DFhojuJ8aO4GJXZbRV6gVotCFBCefZvu1rE-wjoouZn9r-971SrbMV9krHs&usqp=CAU"
@@ -297,11 +272,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de sobremesa</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 88,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 88,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dessert onclick="addChecked(this, '[data-dessert]')">
               <figure class="options__figure">
                 <img
                   src="https://image.freepik.com/fotos-gratis/sobremesa-doce-com-bolo-de-chocolate-lava-e-sorvete_74190-6984.jpg"
@@ -309,11 +287,14 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de sobremesa</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 16,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 16,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-identifier="food-option" data-dessert onclick="addChecked(this, '[data-dessert]')">
               <figure class="options__figure">
                 <img
                   src="https://thumbs.dreamstime.com/z/sobremesa-italiana-tradicional-do-bolo-tiramisu-com-cacau-em-uma-placa-da-porcelana-no-fundo-branco-fim-acima-126039425.jpg"
@@ -321,7 +302,10 @@
                 <figcaption class="options__figure-describe">
                   <h2 class="options__first-title">Prato de comida</h2>
                   <h3 class="options__second-title">Um pouco de batata, um pouco de salada</h3>
-                  <span class="options__third-title">R$ 23,99</span>
+                  <div class="options__footer">
+                    <span class="options__third-title">R$ 23,99</span>
+                    <img src="/app/_img/checked.svg" width="16px" alt="checked" />
+                  </div>
                 </figcaption>
               </figure>
             </li>
